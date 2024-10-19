@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULATER</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./bootstrap-5.3.3-dist/css/bootstrap.min.css">
+
+</head>
+<body>
+    
+<div class="container-fluid">
+    <div class="container">
+        <div class="calculater">
+<input type="text" id="main">
+
+
+<input type="button" value="Ac" onclick="main.value = ''" style="background-color: #fc6f00 ;">
+<input type="button" value="DE" onclick="main.value = main.value.toString().slice(0,-1)" style="background-color: #d80d10;">
+<input type="button" value="-" onclick="main.value += '-'">
+<input type="button" value="/" onclick="main.value += '/'"><br>
+<input type="button" value="7" onclick="main.value += '7'">
+<input type="button" value="8" onclick="main.value += '8'">
+<input type="button" value="9" onclick="main.value += '9'">
+<input type="button" value="*" onclick="main.value += '*'"><br>
+<input type="button" value="4" onclick="main.value += '4'">
+<input type="button" value="5" onclick="main.value += '5'">
+<input type="button" value="6" onclick="main.value += '6'">
+<input type="button" value="." onclick="main.value += '.'"><br>
+
+<input type="button" value="1" onclick="main.value += '1'">
+<input type="button" value="2" onclick="main.value += '2'">
+<input type="button" value="3" onclick="main.value += '3'">
+<input type="button" value="+" onclick="main.value += '+'"><br>
+<input type="button" value="0" onclick="main.value += '0'">
+<input type="button" value="00" onclick="main.value += '00'">
+<input type="button" value="=" class="equal" onclick="main.value = eval(main.value)">
+ 
+
+
+
+
+
+
+
+
+
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="./script.js"></script>
+
+</body>
+</html>
